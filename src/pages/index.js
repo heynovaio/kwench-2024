@@ -9,8 +9,8 @@ import Seo from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <div className="intro container">
-      We are looking for collaborators — people with ideas or knowledge to share; who want to make an impact; and who want to create communities.
-      <a href="/">Become a Cultural Event Partner</a>
+      We are looking for collaborators <br />— people with ideas or knowledge to share; who want to make an impact; and who want to create communities.
+      <a className="cta-link" href="/">Become a Cultural Event Partner</a>
     </div>
 
     <section className="container">
@@ -159,18 +159,19 @@ const IndexPage = () => (
 
     <section className="container">   
       <h2>How to become a Cultural Partner</h2>
-      <div>
-        <strong>Step 1:</strong>
-        <p>Find out what opportunities we offer for you to host or co-host an event at KWENCH (above!). </p>
+      <div style={{textAlign: 'center', maxWidth: '800px', margin: '0 auto'}}>
+        <p>
+        <strong>Step 1:</strong><br />
+        Find out what opportunities we offer for you to host or co-host an event at KWENCH (above!). </p>
 
-        <strong>Step 2:</strong>
-        <p>Align your event idea with one of our event types. Prepare a few notes about why your event is the right fit for KWENCH. (Eg. What is the offer or idea? Who is it for/Who would benefit from it? How does it align with KWENCH values and contribute to the club’s culture?).</p>
+        <p><strong>Step 2:</strong><br />
+       Align your event idea with one of our event types. Prepare a few notes about why your event is the right fit for KWENCH. (Eg. What is the offer or idea? Who is it for/Who would benefit from it? How does it align with KWENCH values and contribute to the club’s culture?).</p>
 
-        <strong>Step 3:</strong>
-        <p>Get in touch with our cultural coordinator through the links below. </p>
-        <a href="">Become a Cultural Event Partner</a>
-        <a href="">Talk to a Human</a>
+       <p><strong>Step 3:</strong><br />
+        Get in touch with our cultural coordinator through the links below. </p>
       </div>  
+        <a className="cta-link" style={{marginBottom: '20px'}} href="">Become a Cultural Event Partner</a>
+        <a className="cta-link" style={{marginTop: '20px'}} href="">Talk to a Human</a>
     </section>
   </Layout>
 )

@@ -56,5 +56,48 @@ main {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 400;
+  font-weight: 500;
+  font-family: $font-heading;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5em;
+
+  @include breakpoint(md, min-width) {
+    font-size: 2.25em;
+  }
+}
+
+.intro {
+  font-size: 3.4em;
+  font-family: $font-heading;
+  max-width: $medium;
+  padding: $v-space 0;
+  text-align: center;
+}
+
+.cta-link {
+  display: block;
+  text-align: center;
+  font-weight: 600;
+  text-decoration: none;
+  color: $dark;
+  font-size: 1.2rem;
+  margin-top: $v-space;
+  margin-bottom: $v-space;
+  transition: all 200ms ease-in-out;
+
+  &:before {
+    content: '/';
+    padding-right: 4px;
+  } 
+
+  &:hover {
+    transform: scale(105%);
+  }
+}
+
+strong {
+  font-weight: 500;
 }
