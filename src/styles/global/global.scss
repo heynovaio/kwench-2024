@@ -1,0 +1,60 @@
+html {
+  font-size: 20px;
+}
+
+body {
+  font-family: $font-body;
+  background: $light;
+  color: $dark;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  @include breakpoint(xl) {
+    max-width: $large;
+  }
+  @include breakpoint(xl, max-width) {
+    max-width: $large;
+  }
+  @include breakpoint(lg, max-width) {
+    max-width: $large;
+  }
+  @include breakpoint(md, max-width) {
+    max-width: $medium;
+  }
+  @include breakpoint(sm, max-width) {
+    max-width: $small;
+  }
+
+  &-full {
+    max-width: 100%;
+  }
+}
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
+}
+
+main {
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}

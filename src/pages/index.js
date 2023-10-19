@@ -1,128 +1,183 @@
 import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
-
 import Layout from "../components/layout"
+import ImageCta from "../components/ImageCta"
+import BoxList from "../components/BoxList"
+import Slideshow from "../components/Slideshow"
+import ColumnText from "../components/ColumnText"
 import Seo from "../components/seo"
-import * as styles from "../components/index.module.css"
-
-const links = [
-  {
-    text: "Tutorial",
-    url: "https://www.gatsbyjs.com/docs/tutorial",
-    description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
-  },
-  {
-    text: "Examples",
-    url: "https://github.com/gatsbyjs/gatsby/tree/master/examples",
-    description:
-      "A collection of websites ranging from very basic to complex/complete that illustrate how to accomplish specific tasks within your Gatsby sites.",
-  },
-  {
-    text: "Plugin Library",
-    url: "https://www.gatsbyjs.com/plugins",
-    description:
-      "Learn how to add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
-  },
-  {
-    text: "Build and Host",
-    url: "https://www.gatsbyjs.com/cloud",
-    description:
-      "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
-  },
-]
-
-const samplePageLinks = [
-  {
-    text: "Page 2",
-    url: "page-2",
-    badge: false,
-    description:
-      "A simple example of linking to another page within a Gatsby site",
-  },
-  { text: "TypeScript", url: "using-typescript" },
-  { text: "Server Side Rendering", url: "using-ssr" },
-  { text: "Deferred Static Generation", url: "using-dsg" },
-]
-
-const moreLinks = [
-  { text: "Join us on Discord", url: "https://gatsby.dev/discord" },
-  {
-    text: "Documentation",
-    url: "https://gatsbyjs.com/docs/",
-  },
-  {
-    text: "Starters",
-    url: "https://gatsbyjs.com/starters/",
-  },
-  {
-    text: "Showcase",
-    url: "https://gatsbyjs.com/showcase/",
-  },
-  {
-    text: "Contributing",
-    url: "https://www.gatsbyjs.com/contributing/",
-  },
-  { text: "Issues", url: "https://github.com/gatsbyjs/gatsby/issues" },
-]
-
-const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
 
 const IndexPage = () => (
   <Layout>
-    <div className={styles.textCenter}>
-      <StaticImage
-        src="../images/example.png"
-        loading="eager"
-        width={64}
-        quality={95}
-        formats={["auto", "webp", "avif"]}
-        alt=""
-        style={{ marginBottom: `var(--space-3)` }}
-      />
-      <h1>
-        Welcome to <b>Gatsby!</b>
-      </h1>
-      <p className={styles.intro}>
-        <b>Example pages:</b>{" "}
-        {samplePageLinks.map((link, i) => (
-          <React.Fragment key={link.url}>
-            <Link to={link.url}>{link.text}</Link>
-            {i !== samplePageLinks.length - 1 && <> · </>}
-          </React.Fragment>
-        ))}
-        <br />
-        Edit <code>src/pages/index.js</code> to update this page.
-      </p>
+    <div className="intro container">
+      We are looking for collaborators — people with ideas or knowledge to share; who want to make an impact; and who want to create communities.
+      <a href="/">Become a Cultural Event Partner</a>
     </div>
-    <ul className={styles.list}>
-      {links.map(link => (
-        <li key={link.url} className={styles.listItem}>
-          <a
-            className={styles.listItemLink}
-            href={`${link.url}${utmParameters}`}
-          >
-            {link.text} ↗
-          </a>
-          <p className={styles.listItemDescription}>{link.description}</p>
-        </li>
-      ))}
-    </ul>
-    {moreLinks.map((link, i) => (
-      <React.Fragment key={link.url}>
-        <a href={`${link.url}${utmParameters}`}>{link.text}</a>
-        {i !== moreLinks.length - 1 && <> · </>}
-      </React.Fragment>
-    ))}
+
+    <section className="container">
+      <h2>Your Partnership with Kwench Includes</h2>
+
+      <BoxList
+        one={'Access to our members, who represent a range of business owners, creatives, and entrepreneurs who are always looking to level up the way they work — from revenue generation to lifestyle, people and culture.'}
+        two={'The amplification of your event through our channels (our newsletter of over 1000 subscribers, our 5K followers on social, and over 450 members).'}
+        three={'A stylish, accessible, full-service event space that has been designed specifically for groups to meet with comfort and convenience.'}
+        four={'Cultural positioning that raises the profile of your event.'}
+      />
+    </section>
+
+    <section style={{textAlign: 'center'}}>
+      <h2>Event Partnerships We Offer</h2>
+
+      {/* bg colours can be either 'pink', 'red' or 'yellow' */}
+      <ImageCta
+        title={'Lunch & Learn'}
+        content={'Share your professional advice through some laser-sharp training in this hour-long session for the KWENCH community. Lunch & Learn hosts almost always generate new work and leave with greater awareness of their company.'}
+        fee={'Fee: Free'}
+        image={'/images/image-lunchlearn.png'}
+        direction={'left'}
+        bg={'red'}
+        link={""}
+      />
+      <ColumnText
+        column1={
+          <>
+          <strong>What You’ll Get:</strong>
+          <ul>
+            <li>1-hour of free space to host a pre-registered group from the KWENCH community.</li>
+            <li>Typically held in the Knowledge Boardroom featuring a large conference table, ergonomic seating, flooded with natural light and a credenza for in-room coffee and catering service.</li>
+            <li>Capacity: 16</li>
+          </ul>
+          </>
+        }
+        column2={
+          <>
+          <strong>What We Ask of You:</strong>
+          <ul>
+            <li>Avoid pitching — this is a learning event, not a sales pitch. Your topic needs to connect with and inform the audience.</li>
+            <li>Promotional assets: 1 social post + 1 event post</li>
+            <li>We recommend you provide light lunch or snacks for the group… it’s not required but no one learns on an empty stomach!</li>
+          </ul>
+          </>
+        }
+      />
+      <a className="cta-link" href="">Book a Lunch & Learn</a>
+
+      <ImageCta
+        title={'Knowledge Share'}
+        content={'A big idea, a new launch, or business insight that you want to bring to a larger audience. This is not a pitch but a fine-tuned exploration that will generate opportunity, exposure and influence for you and your company.'}
+        fee={'Fee: Hourly fee, price to be determined'}
+        image={'/images/image-knowledgeshare.png'}
+        direction={'right'}
+        bg={'pink'}
+        link={""}
+      />
+      <ColumnText
+        column1={
+          <>
+          <strong>What You’ll Get:</strong>
+          <ul>
+            <li>Typically held in the Experience Room, a comfortable space that is closed from the rest of the club, with a capacity of up to 80 people or 56 seated.</li>
+          </ul>
+          </>
+        }
+        column2={
+          <>
+          <strong>What We Ask of You:</strong>
+          <ul>
+            <li>Promotional assets: 1 social post + 1 event post</li>
+            <li>Manage a ticketing link and share the list with KWENCH</li>
+          </ul>
+          </>
+        }
+      />
+
+      <a className="cta-link" href="">Book a Knowledge Share</a>
+
+      <ImageCta
+        title={'Show Stopper'}
+        content={'An electic mix of headline events that attract large, highly engaged audiences. From alternative offerings to talks featuring prominent keynote speakers, they are all ambitious culture-shaping events that bring something new to life.'}
+        image={'/images/image-showstopper.png'}
+        direction={'left'}
+        bg={'yellow'}
+        link={""}
+        fee={
+          <>Fee Options:
+            <ul>
+              <li>Free with a guaranteed audience of over 100 people or a minimum bar spend of $1000</li>
+              <li>A fixed fee of $850-$1050 depending on requirements</li>
+            </ul>
+          </>
+          }
+      />
+      <ColumnText
+        column1={
+          <>
+          <strong>What You’ll Get:</strong>
+          <ul>
+            <li>A comfortable, spacious, well-lit space that holds up 250 people</li>
+            <li>Availability: Monday to Saturday evenings from 5.30-11pm </li>
+            <li>Creative and logistical support from KWENCH for bringing your vision to life</li>
+          </ul>
+          </>
+        }
+        column2={
+          <>
+          <strong>What We Ask of You:</strong>
+          <ul>
+            <li>Promotion strategy</li>
+            <li>Promotional assets: 1 social post + 1 event post</li>
+            <li>Manage a ticketing link and share the list with KWENCH</li>
+          </ul>
+          </>
+        }
+      />
+
+       <a className="cta-link" href="">Book a Show Stopper</a>
+    </section>
+   
+   <section>
+    <Slideshow
+        slides = {
+          [
+            {
+              url: 'https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80',
+              caption: 'First Slide',
+              alt: 'foo'
+            },
+            {
+              url: 'https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1536&q=80',
+              caption: 'Second Slide',
+              alt: 'bar'
+            },
+            {
+              url: 'https://images.unsplash.com/photo-1536987333706-fc9adfb10d91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80',
+              caption: 'Third Slide'
+            },
+          ]
+        }
+      />
+    </section>
+
+    <section className="container">   
+      <h2>How to become a Cultural Partner</h2>
+      <div>
+        <strong>Step 1:</strong>
+        <p>Find out what opportunities we offer for you to host or co-host an event at KWENCH (above!). </p>
+
+        <strong>Step 2:</strong>
+        <p>Align your event idea with one of our event types. Prepare a few notes about why your event is the right fit for KWENCH. (Eg. What is the offer or idea? Who is it for/Who would benefit from it? How does it align with KWENCH values and contribute to the club’s culture?).</p>
+
+        <strong>Step 3:</strong>
+        <p>Get in touch with our cultural coordinator through the links below. </p>
+        <a href="">Become a Cultural Event Partner</a>
+        <a href="">Talk to a Human</a>
+      </div>  
+    </section>
   </Layout>
 )
 
 /**
  * Head export to define metadata for the page
- *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
 export const Head = () => <Seo title="Home" />
-
 export default IndexPage

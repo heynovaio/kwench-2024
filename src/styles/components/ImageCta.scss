@@ -1,0 +1,66 @@
+@import '../global/variables';
+
+.imageCta {
+  background-color: $pink;
+  margin-bottom: $v-space;
+
+  .image-col {
+    display: inline-flex;
+    align-items: flex-start;
+    img {
+      object-fit: cover;
+      max-width: 100%;
+    }
+  }
+
+  &.order-right {
+    .image-col {
+      align-items: flex-end;
+    }
+  }
+  .col {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em;
+    color: $dark;
+    font-size: 1.25em;
+    font-weight: 500;
+    text-align: left;
+
+    &.text-white {
+      color: $white;
+    }
+
+    .fee {
+      font-size: 1.2rem;
+      font-weight: 300;
+      padding-top: 20px;
+    }
+  }
+
+  @include breakpoint(md, min-width) {
+    display: flex;
+
+    .col, .image-col {
+      width: 50%;
+      max-width: 50%;
+      font-size: 1.5em;
+    }
+
+    &.order-right {
+      .col {
+        order: 1;
+      }
+      .image-col {
+        order: 2;
+      }
+    } 
+  }
+
+  @include breakpoint(lg, min-width) {
+    .col {
+      font-size: 2.25em;
+    }
+  }
+}

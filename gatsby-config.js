@@ -9,15 +9,16 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Kwench Events`,
+    description: ``,
+    author: `HeyNova`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
+    `gatsby-plugin-sass`,
     `gatsby-plugin-image`,
     {
-      resolve: `gatsby-source-filesystem`,
+    resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
@@ -28,15 +29,32 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Kwench Events`,
+        short_name: `kwench-events`,
         start_url: `/`,
-        background_color: `#663399`,
-        // This will impact how browsers show your PWA/website
-        // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#663399`,
+        background_color: `#ecdbe1`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/gatsby-icon.png`,
+      },
+    },
+    `gatsby-omni-font-loader`,
+    {
+      resolve: `gatsby-omni-font-loader`,
+      options: {
+        enableListener: true,
+        preconnect: [`https://use.typekit.net`],
+        custom: [
+          {
+            name: ['FS Siena'],
+            file: `fonts/fonts.css`,
+          },
+        ],    
+        web: [
+          {
+            name: `canada-type-gibson`,
+            file: `https://use.typekit.net/jxr5rgp.css`,
+          },
+        ],
       },
     },
   ],

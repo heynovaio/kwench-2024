@@ -1,0 +1,28 @@
+
+@mixin breakpoint($point, $min-or-max: min-width) {
+  @if $point == "xl" {
+    @media ($min-or-max: $full-width) {
+      @content;
+    }
+  } @else if $point == "lg" {
+    @media ($min-or-max: $large) {
+      @content;
+    }
+  } @else if $point == "md" {
+    @media ($min-or-max: $medium) {
+      @content;
+    }
+  } @else if $point == "sm" {
+    @media ($min-or-max: $small) {
+      @content;
+    }
+  } @else if $point == "xs" {
+    @media ($min-or-max: $extra-small) {
+      @content;
+    }
+  } @else {
+    @media ($min-or-max: $point) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+@import "mixins.scss";
+
+//Colours
+$tan:   #ecebe1;
+$black: #2a3942;
+$white: #ffffff;
+$red:   #f15f58;
+$pink:  #fac4d2;
+$yellow:#ffc20e;
+
+$dark: $black;
+$light: $tan;
+$primary: $yellow; 
+
+//variables for components 
+
+:root {
+  --red-color: #f15f58;
+  --pink-color: #fac4d2;
+  --yellow-color: #ffc20e;
+}
+
+//Fonts
+$font-body: canada-type-gibson, sans-serif;
+$font-heading: 'FS Siena', serif;
+
+
+// Breakpoints
+$full-width: 1600px;
+$large: 1280px;
+$medium: 980px;
+$small: 768px;
+$extra-small: 460px;
+
+//Spacing
+
+$v-space : 70px;
