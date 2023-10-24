@@ -46,7 +46,7 @@ module.exports = {
         custom: [
           {
             name: ['FS Siena'],
-            file: `fonts/fonts.css`,
+            file: `static/fonts/fonts.css`,
           },
         ],    
         web: [
