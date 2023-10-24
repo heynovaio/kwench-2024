@@ -74,11 +74,15 @@ a {
 }
 
 .intro {
-  font-size: 3.4em;
+  font-size: 2.5em;
   font-family: $font-heading;
   max-width: $medium;
   padding: $v-space 0;
   text-align: center;
+
+  @include breakpoint(lg, min-width) {
+    font-size: 3.4em;
+  }
 }
 
 .cta-link {
