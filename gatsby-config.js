@@ -42,13 +42,7 @@ module.exports = {
       resolve: `gatsby-omni-font-loader`,
       options: {
         enableListener: true,
-        preconnect: [`https://use.typekit.net`],
-        custom: [
-          {
-            name: ['FS Siena'],
-            file: `static/fonts/fonts.css`,
-          },
-        ],    
+        preconnect: [`https://use.typekit.net`],   
         web: [
           {
             name: `canada-type-gibson`,
