@@ -14,7 +14,7 @@ const IndexPage = () => (
     </div>
 
     <section className="container">
-      <h2>Your Partnership with Kwench Includes</h2>
+      <h2>Your partnership with KWENCH includes:</h2>
 
       <BoxList
         one={'Access to our members, who represent a range of business owners, creatives, and entrepreneurs who are always looking to level up the way they work — from revenue generation to lifestyle, people and culture.'}
