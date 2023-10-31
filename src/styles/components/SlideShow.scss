@@ -10,9 +10,14 @@
   .slide {
     .col {
       display: inline-flex;
-      align-items: end;
+      align-items: center;
       padding: 1em 1em 2em 1em;
       min-height: 200px;
+      text-align: center;
+
+      p {
+        width: 100%;
+      }
     }
 
     .image-col {

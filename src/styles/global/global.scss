@@ -21,10 +21,10 @@ body {
   padding: 0 15px;
 
   @include breakpoint(xl) {
-    max-width: $large;
+    max-width: $full-width;
   }
   @include breakpoint(xl, max-width) {
-    max-width: $large;
+    max-width: $full-width;
   }
   @include breakpoint(lg, max-width) {
     max-width: $large;
@@ -56,13 +56,13 @@ main {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 500;
+  font-weight: 600;
   font-family: $font-heading;
   text-align: center;
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 2em;
 
   @include breakpoint(md, min-width) {
     font-size: 2.25em;
@@ -73,8 +73,19 @@ a {
   color: $dark;
 }
 
+p {
+  line-height: 1.3em;
+}
+
+ul {
+  li {
+    margin-bottom: 10px;
+  }
+}
+
 .intro {
   font-size: 2.5em;
+  font-weight: 600;
   font-family: $font-heading;
   max-width: $medium;
   padding: $v-space 0;
@@ -93,7 +104,7 @@ a {
   color: $dark;
   font-size: 1.2rem;
   margin-top: $v-space;
-  margin-bottom: $v-space;
+  margin-bottom: $v-space*2;
   transition: all 200ms ease-in-out;
 
   &:before {
@@ -108,4 +119,30 @@ a {
 
 strong {
   font-weight: 600;
+  padding-bottom: 0px;
+  padding-top: 10px;
+  display: block;
+}
+
+.column-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: $large;
+
+  @include breakpoint(md, min-width) {
+    flex-direction: row;
+  }
+}
+
+.column {
+  max-width: 100%;
+  min-width: auto;
+
+  @include breakpoint(md, min-width) {
+    max-width: 48%;
+    min-width: 48%;
+  }
 }

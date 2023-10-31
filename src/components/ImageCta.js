@@ -7,7 +7,7 @@ const ImageCta = ({ title, content, image, fee, direction, link, bg }) => {
    var textColor = 'text-white';
   } 
   return (
-    <div className={`container-full imageCta order-${direction}`} style={{backgroundColor: 'var(--' + bg + '-color)'}}>
+    <div className={`container imageCta order-${direction}`} style={{backgroundColor: 'var(--' + bg + '-color)'}}>
       <div className='image-col'>
         {image ?
           <img className="ctaimage" src={image} alt={title}/>

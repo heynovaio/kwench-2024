@@ -20,7 +20,7 @@ const IndexPage = () => (
         one={'Access to our members, who represent a range of business owners, creatives, and entrepreneurs who are always looking to level up the way they work — from revenue generation to lifestyle, people and culture.'}
         two={'The amplification of your event through our channels (our newsletter of over 1000 subscribers, our 5K followers on social, and over 450 members).'}
         three={'A stylish, accessible, full-service event space that has been designed specifically for groups to meet with comfort and convenience.'}
-        four={'Cultural positioning that raises the profile of your event.'}
+        four={'Cultural positioning that raises the profile of your event. Located in a converted industrial space with a stunning contemporary redesign, KWENCH has been featured in Wallpaper, Frame and Nuovo.'}
       />
     </section>
 
