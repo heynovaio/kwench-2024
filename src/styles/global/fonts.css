@@ -2,14 +2,21 @@
   font-family: 'FS Siena';
   src: url('/fonts/FSSienaWeb-SemiBold.eot') format('eot'),
        url('/fonts/FSSienaWeb-SemiBold.woff') format('woff');
-  font-weight: 400;
+  font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'FS Siena';
-  src: url('/fonts/FSSienaWeb-Light.eot') format('eot'),
-       url('/fonts/FSSienaWeb-Light.woff') format('woff');
+  src: url('/fonts/fssiena-light-webfont.woff2') format('woff2'),
+       url('/fonts/fssiena-light-webfont.woff') format('woff');
   font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FS Siena';
+  src: url('/fonts/FSSienaWeb-Thin.eot') format('eot'),
+       url('/fonts/FSSienaWeb-Thin.woff') format('woff');
+  font-weight: 200;
   font-style: normal;
 }
