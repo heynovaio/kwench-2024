@@ -85,12 +85,12 @@ ul {
 
 .intro {
   font-size: 2.5em;
-  font-weight: 600;
+  font-weight: 300;
   font-family: $font-heading;
   max-width: $medium;
   padding: $v-space 0;
   text-align: center;
-
+  color: $black;
   @include breakpoint(lg, min-width) {
     font-size: 3.4em;
   }

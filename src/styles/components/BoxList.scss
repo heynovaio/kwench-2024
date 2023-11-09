@@ -9,7 +9,7 @@
   .col {
     background-image: url(../../images/box-list-1.png);
     background-position: right bottom;
-    background-size: 85% 85%;
+    background-size:contain;
     background-repeat: no-repeat;
     background-color: $yellow;
     aspect-ratio: 1/1;
@@ -20,7 +20,7 @@
     font-size: 1rem;
     line-height: 1.4em;
     min-width: 40%;
-    max-width: 40%;
+    
     align-items: center;
 
     &:nth-child(2) {
@@ -36,7 +36,7 @@
 
   @include breakpoint(md, min-width) {
     flex-direction: row;
-    flex-wrap: nowrap;
+    
     justify-content: space-between;
     align-items: flex-start;
 

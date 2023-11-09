@@ -3,6 +3,7 @@
 .imageCta {
   background-color: $pink;
   margin-bottom: $v-space;
+  gap: 2em;
 
   .image-col {
     display: inline-flex;
@@ -22,7 +23,7 @@
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
-    padding: 2em;
+    padding: 2em 0em;
     color: $dark;
     font-size: 1.25em;
     font-weight: 600;
@@ -46,6 +47,7 @@
       width: 50%;
       max-width: 50%;
       font-size: 1.5em;
+      padding: 2em 0em;
     }
 
     &.order-right {
@@ -61,6 +63,7 @@
   @include breakpoint(lg, min-width) {
     .col {
       font-size: 2.25em;
+      padding: 2em;
     }
   }
 }
