@@ -39,18 +39,18 @@ export default function EventsForm() {
       
     console.log(lead)
 
-    // $.ajax('https://api.tripleseat.com/v1/leads/create.js?public_key=9fb42246fd29af7f0b1edca5d489349472914b89', 
-    // { data: lead, 
-    // dataType:'JSONP', 
-    // crossDomain:true, 
-    // success: function(data) { 
-    //   if (data.errors != undefined) {
-    //     // handle errors
-    //   } else {
-    //     // show data.success_message
-    //   }
-    // } 
-    // });
+    $.ajax('https://api.tripleseat.com/v1/leads/create.js?public_key=9fb42246fd29af7f0b1edca5d489349472914b89', 
+    { data: lead, 
+    dataType:'JSONP', 
+    crossDomain:true, 
+    success: function(data) { 
+      if (data.errors != undefined) {
+        // handle errors
+      } else {
+        // show data.success_message
+      }
+    } 
+    });
   }
   return (
     <div>
