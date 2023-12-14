@@ -5,7 +5,9 @@ import EventsForm from "../components/EventsForm"
 
 const FormPage = () => (
 <Layout>
-  <EventsForm />
+  <div className="container" style={{maxWidth: '800px'}}>
+    <EventsForm />
+  </div>
 </Layout>
 )
 
