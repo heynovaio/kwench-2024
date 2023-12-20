@@ -9,10 +9,10 @@ export default function EventsForm() {
   function event_category(event) {
     $('.extra').removeClass('open');
 
-    if(event.target.value == "Knowledge Share") {
+    if(event.target.value === "Knowledge Share") {
       $('.extra-knowledge').addClass('open');
 
-    } else if(event.target.value == "Show Stopper") {
+    } else if(event.target.value === "Show Stopper") {
       
         $('.extra-show').addClass('open');
     }
@@ -35,29 +35,31 @@ export default function EventsForm() {
     lead['lead'] = data;
     lead['lead']['additional_information'] = custom_vals
     lead['lead']['event_description'] = event_category
-    lead['lead_form_id'] = 33624;
+    lead['lead_form_id'] = 33432;
       
-    console.log(lead)
-
-    $.ajax('https://api.tripleseat.com/v1/leads/create.js?public_key=9fb42246fd29af7f0b1edca5d489349472914b89', 
+    $.ajax('https://api.tripleseat.com/v1/leads/create.js?public_key=9fb42246fd29af7f0b1edca5d489349472914b89',
     { data: lead, 
     dataType:'JSONP', 
     crossDomain:true, 
     success: function(data) { 
-      if (data.errors != undefined) {
-        // handle errors
+      if (data.errors !== undefined) {
+        $('#error-message').prepend(data.errors);
+        console.log(data.errors);
       } else {
-        // show data.success_message
+        $('body').find('#event_form').hide();
+        $('#message').show();
+        $('#message').prepend(data.success_message);
       }
     } 
     });
   }
   return (
     <div>
-      <h1>Contact form</h1>
+      <h1>Event Partnership with KWENCH Form</h1>
       <form
         onSubmit={handleSubmit}
         method="POST"
+        id="event_form"
       >
         <div className="column-container">
           <div>
@@ -115,10 +117,22 @@ export default function EventsForm() {
           <textarea rows="3" name="Topic Description" className="additional" placeholder="" id="topic_description" /></div>
         </div>
         <div className="column-container">
-          <div><label htmlFor="date">Date</label>
-          <input type="date" name="event_date" id="date"/></div>
-          <div><label htmlFor="time">Time</label>
-          <input type="time" name="start_time" id="time"/></div>
+          <div>
+            <div>
+              <label htmlFor="date">Event Date</label>
+              <input type="date" name="event_date" id="date"/>
+            </div>
+            <div>
+              <label htmlFor="setup_time">Set Up Time</label>
+              <input type="time" className="additional" name="Set-up Time" id="setup_time"/>
+            </div>
+          </div>
+          <div>
+          <div><label htmlFor="start_time">Event Start Time</label>
+          <input type="time" name="start_time" id="start_time"/></div>
+          <div><label htmlFor="end_time">Event End Time</label>
+          <input type="time" name="end_time" id="end_time"/></div>
+          </div>
         </div>
         <div className="radio-container">
           <p>Is this a member's only or a public event?</p>
@@ -138,7 +152,7 @@ export default function EventsForm() {
           <label htmlFor="other">Is there anything else you want us to know?</label>
           <textarea rows="4" name="Other Info" className="additional"  placeholder="" id="other" />
         </div>
-        <div class="single-container">
+        <div className="single-container">
           <select id="event_category" required className="additional" onChange={event_category}>
             <option value="Lunch and Learn">Book a Lunch and Learn</option>
             <option value="Knowledge Share">Book a Knowledge Share</option>
@@ -182,12 +196,17 @@ $850-$1050</label>
             </div>
           </div>
         </div>
-        <div class="radio-container">
-          <label htmlFor="gdpr">GDPR Consent</label>
-          <input type="checkbox" name="gdpr_consent_granted" value="1" id="gdpr"/>
+        <div className="radio-container">
+          <label htmlFor="gdpr">I consent to providing my data to KWENCH</label>
+          <input type="checkbox" name="gdpr_consent_granted" value="1" id="gdpr" required/>
         </div>
           <button className="cta-link" type="submit">Book Event!</button>
+          <div id="error-message" className="error-box">
+          </div>
         </form>
+        <div id="message" className="message-box">
+          <a href="https://www.clubkwench.com/" className="cta-link"> Back to KWENCH</a>
+        </div>
     </div>
   )
 }
