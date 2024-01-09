@@ -137,7 +137,7 @@ export default function EventsForm() {
         <div className="radio-container">
           <p>Is this a member's only or a public event?</p>
           <input type="radio" id="event_members" className="additional" name="Event Audience" value="member's only"/>
-          <label htmlFor="event_members">Member's only</label>
+          <label htmlFor="event_members">Members only</label>
           <input type="radio" name="Event Audience" id="event_public" className="additional"  value="public event"/>
           <label htmlFor="event_public">Public event</label>
         </div>
@@ -179,12 +179,12 @@ export default function EventsForm() {
             <textarea name="Audience Info" className="additional"  placeholder="" id="audience_info" /></div>
             <div className="radio-container">
               <p>Which option are you interested in?</p>
-              <input type="radio" id="fee_choice_1" className="additional" name="Fee Choice" value="Free"/>
-              <label htmlFor="fee_choice_1">Free with a guaranteed
-audience of over 100 people or a minimum bar spend of $1000</label>
-              <input type="radio" name="Fee Choice" id="fee_choice_2" className="additional"  value="Fixed"/>
-              <label htmlFor="fee_choice_2">A fixed fee of
-$850-$1050</label>
+              <input type="radio" id="fee_choice_1" className="additional" name="Fee Choice" value="1-50"/>
+              <label htmlFor="fee_choice_1">1-50 people with a minimum bar spend of $1000</label>
+              <input type="radio" name="Fee Choice" id="fee_choice_2" className="additional"  value="50-100"/>
+              <label htmlFor="fee_choice_2">50-100 people with a minimum bar spend of $1700</label>
+              <input type="radio" name="Fee Choice" id="fee_choice_3" className="additional"  value="100 above"/>
+              <label htmlFor="fee_choice_3">100+ people with a minimum bar spend of $2500</label>
             </div>
             <div className="radio-container">
               <p>Are you prepared to supply promotional assets & manage a ticketing link?</p>
