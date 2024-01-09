@@ -10,7 +10,7 @@ const IndexPage = () => (
   <Layout>
     <div className="intro container">
       We are looking for collaborators <br />— people with ideas or knowledge to share; who want to make an impact; and who want to create communities.
-      <a className="cta-link" href="/">Become a Cultural Event Partner</a>
+      <a className="cta-link" href="/eventsform/">Become a Cultural Event Partner</a>
     </div>
 
     <section className="container">
@@ -35,7 +35,6 @@ const IndexPage = () => (
         image={'/images/image-lunchlearn.png'}
         direction={'left'}
         bg={'red'}
-        link={""}
       />
       <ColumnText
         column1={
@@ -59,7 +58,7 @@ const IndexPage = () => (
           </>
         }
       />
-      <a className="cta-link" href="">Book a Lunch & Learn</a>
+      <a className="cta-link" href="/eventsform/">Book a Lunch & Learn</a>
 
       <ImageCta
         title={'Knowledge Share'}
@@ -68,7 +67,6 @@ const IndexPage = () => (
         image={'/images/image-knowledgeshare.png'}
         direction={'right'}
         bg={'pink'}
-        link={""}
       />
       <ColumnText
         column1={
@@ -90,7 +88,7 @@ const IndexPage = () => (
         }
       />
 
-      <a className="cta-link" href="">Book a Knowledge Share</a>
+      <a className="cta-link" href="/eventsform/">Book a Knowledge Share</a>
 
       <ImageCta
         title={'Show Stopper'}
@@ -98,7 +96,6 @@ const IndexPage = () => (
         image={'/images/image-showstopper.png'}
         direction={'left'}
         bg={'yellow'}
-        link={""}
         fee={
           <>Fee Options:
             <ul>
@@ -131,7 +128,7 @@ const IndexPage = () => (
         }
       />
 
-       <a className="cta-link" href="">Book a Show Stopper</a>
+       <a className="cta-link" href="/eventsform/">Book a Show Stopper</a>
     </section>
    
    <section className="container">
@@ -165,8 +162,8 @@ const IndexPage = () => (
        <p><strong>Step 3:</strong><br />
         Get in touch with our cultural coordinator through the links below. </p>
       </div>  
-        <a className="cta-link" style={{marginBottom: '20px'}} href="">Become a Cultural Event Partner</a>
-        <a className="cta-link" style={{marginTop: '20px'}} href="">Talk to a Human</a>
+        <a className="cta-link" style={{marginBottom: '20px'}} href="/eventsform/">Become a Cultural Event Partner</a>
+        <a className="cta-link" style={{marginTop: '20px'}} href="/eventsform/">Talk to a Human</a>
     </section>
   </Layout>
 )

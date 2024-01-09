@@ -180,11 +180,11 @@ export default function EventsForm() {
             <div className="radio-container">
               <p>Which option are you interested in?</p>
               <input type="radio" id="fee_choice_1" className="additional" name="Fee Choice" value="1-50"/>
-              <label htmlFor="fee_choice_1">1-50 people with a minimum bar spend of $1000</label>
+              <label htmlFor="fee_choice_1">1-50 people with a minimum bar spend of $1000</label><br />
               <input type="radio" name="Fee Choice" id="fee_choice_2" className="additional"  value="50-100"/>
-              <label htmlFor="fee_choice_2">50-100 people with a minimum bar spend of $1700</label>
+              <label htmlFor="fee_choice_2">50-100 people with a minimum bar spend of $1700</label><br />
               <input type="radio" name="Fee Choice" id="fee_choice_3" className="additional"  value="100 above"/>
-              <label htmlFor="fee_choice_3">100+ people with a minimum bar spend of $2500</label>
+              <label htmlFor="fee_choice_3">100+ people with a minimum bar spend of $2500</label><br />
             </div>
             <div className="radio-container">
               <p>Are you prepared to supply promotional assets & manage a ticketing link?</p>
