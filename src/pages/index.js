@@ -2,7 +2,7 @@ import * as React from "react"
 import Layout from "../components/layout"
 import ImageCta from "../components/ImageCta"
 import BoxList from "../components/BoxList"
-import Slideshow from "../components/Slideshow"
+// import Slideshow from "../components/Slideshow"
 import ColumnText from "../components/ColumnText"
 import Seo from "../components/seo"
 
@@ -99,8 +99,9 @@ const IndexPage = () => (
         fee={
           <>Fee Options:
             <ul>
-              <li>Free with a guaranteed audience of over 100 people or a minimum bar spend of $1000</li>
-              <li>A fixed fee of $850-$1050 depending on requirements</li>
+              <li>Bar spend of $1000 (1-50 people)</li>
+              <li>Bar spend of $1700 (50-100 people)</li>
+              <li>Bar spend of $2500 + security fees (100 or more people)</li>
             </ul>
           </>
           }
@@ -131,7 +132,7 @@ const IndexPage = () => (
        <a className="cta-link" href="/eventsform/">Book a Show Stopper</a>
     </section>
    
-   <section className="container">
+   {/* <section className="container">
     <Slideshow
         slides = {
           [
@@ -147,7 +148,7 @@ const IndexPage = () => (
           ]
         }
       />
-    </section>
+    </section> */}
 
     <section className="container">   
       <h2>How to become a Cultural Partner</h2>
@@ -162,8 +163,11 @@ const IndexPage = () => (
        <p><strong>Step 3:</strong><br />
         Get in touch with our cultural coordinator through the links below. </p>
       </div>  
+      <div style={{textAlign: 'center', maxWidth: '800px', margin: '0 auto 120px auto'}}>
         <a className="cta-link" style={{marginBottom: '20px'}} href="/eventsform/">Become a Cultural Event Partner</a>
-        <a className="cta-link" style={{marginTop: '20px'}} href="/eventsform/">Talk to a Human</a>
+        <a className="cta-link" style={{marginTop: '20px', marginBottom: '20px'}} href="mailto:karolina@clubkwench.com">Talk to a Human (email us directly)</a>
+        <p>Or feel free to call us at <a href="tel:250-385-0352">250-385-0352</a> (ask for Karolina)</p>
+      </div>
     </section>
   </Layout>
 )

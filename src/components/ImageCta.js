@@ -2,10 +2,11 @@ import * as React from "react"
 import "../styles/components/ImageCta.scss"
 
 const ImageCta = ({ title, content, image, fee, direction, link, bg }) => {
-  var textColor = 'text-dark';
-  if (bg == 'red') {
+  if (bg === 'red') {
    var textColor = 'text-white';
-  } 
+  } else {
+    var textColor = 'text-dark';
+  }
   return (
     <div className={`container imageCta order-${direction}`} style={{backgroundColor: 'var(--' + bg + '-color)'}}>
       <div className='image-col'>
