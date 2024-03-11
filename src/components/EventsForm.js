@@ -131,7 +131,7 @@ export default function EventsForm() {
           <div><label htmlFor="start_time">Event Start Time</label>
           <input type="time" name="start_time" id="start_time"/></div>
           <div><label htmlFor="end_time">Event End Time</label>
-          <input type="time" name="end_time" id="end_time"/></div>
+          <input type="time" name="end_time" id="end_time" min="10:00" max="0:00"/></div>
           </div>
         </div>
         <div className="radio-container">
