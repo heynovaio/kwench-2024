@@ -1,11 +1,12 @@
 @import '../global/variables';
 
 .carousel {
-  background: $yellow;
-  background-image: url(../../images/slideshow-back.png);
-  background-repeat: no-repeat;
-  background-size: 50%;
-  background-position: right top;
+  // background: $yellow;
+  // background-image: url(../../images/slideshow-back.png);
+  // background-repeat: no-repeat;
+  // background-size: 50%;
+  // background-position: right top;
+  width: 50%;
 
   .slide {
     .col {
@@ -32,13 +33,13 @@
     @include breakpoint(md, min-width) {
       display: flex;
   
-      .col {
-        width: 25%;
-        padding: 2em 1em 4em 1em;
-      }
+      // .col {
+      //   width: 25%;
+      //   padding: 2em 1em 4em 1em;
+      // }
   
       .image-col {
-        width: 75%;
+        width: 100%;
       } 
     }
   }

@@ -7,7 +7,8 @@ const Flickity = require('react-flickity-component');
 const flickityOptions = {
     initialIndex: 2,
     wrapAround: true,
-    pageDots: false
+    pageDots: false,
+    prevNextButtons: false
 }
 const Slideshow = ({ slides }) => (
     <Flickity
@@ -20,9 +21,9 @@ const Slideshow = ({ slides }) => (
     >
       {slides.map((slide, index) => (
         <div key={index} className="slide">
-          <div className="col">
+          {/* <div className="col">
             <p>{slide.caption}</p>
-          </div>
+          </div> */}
           <div className="image-col">
             <img style={{ width: '100%' }} src={slide.url} alt={slide.alt}/>
           </div>
