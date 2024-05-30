@@ -244,3 +244,25 @@ form {
 .carousel {
   width: 100%;
 }
+
+.hubspot-form {
+  padding: 2em 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.home .membership-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+  justify-content: center;
+  margin: 2em auto 4em;
+
+  .btn-membership {
+    vertical-align: middle;
+    svg {
+      margin-left: 3px;
+    }
+  }
+}

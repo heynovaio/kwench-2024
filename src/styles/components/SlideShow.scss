@@ -7,6 +7,9 @@
   // background-size: 50%;
   // background-position: right top;
   width: 50%;
+  @include breakpoint(md, max-width) {
+    width: 100%;
+  }
 
   .slide {
     .col {

@@ -1,6 +1,18 @@
 .navbar {
   display: flex;
   justify-content: space-between;
+  position: static;
+
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+}
+.btn-menu {
+  display: none;
+  @include breakpoint(md, max-width) {
+    display: block;
+  }
 }
 .navbar-nav {
   display: flex;
@@ -15,11 +27,43 @@
   a {
     text-decoration: none;
   }
+  @include breakpoint(md, max-width) {
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    max-height: 0;
+    width: 100%;
+    background: $light;
+    z-index: 10;
+    padding: 2em 0 0 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+
+    li {
+      margin-bottom: 1.5em;
+    }
+
+    &.menu-open {
+      max-height: 100vh;
+    }
+  }
 }
 .navbar-action {
   display: flex;
   align-items: center;
   padding:0 2em 0 2em;
+  @include breakpoint(md, max-width) {
+    padding: 0;
+  
+    .btn {
+      padding: 1em 0.5em;
+    }
+  }
+
 }
 
 .subnav-links {
@@ -30,5 +74,20 @@
   a {
     padding: 10px 20px;
     text-decoration: none;
+  }
+  @include breakpoint(md, max-width) {
+    display: none;
+  }
+}
+
+body.mobile-open {
+  overflow: hidden;
+}
+
+.kw-modal {
+  z-index: 20;
+  min-width: 400px;
+  @include breakpoint(md, max-width) {
+    min-width: 100%;
   }
 }
