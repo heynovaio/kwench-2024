@@ -44,10 +44,16 @@ const Header = () => {
           </a>
           <ul className={`navbar-nav ${isOpen? 'menu-open' : ''}`}>
             <li className="nav-item">
-              <a className="nav-link" target="_blank" href="https://events.clubkwench.com/">Explore Partnerships</a>
+              <a className="nav-link" href="/bookevents">Explore Partnerships</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" target="_blank" href="https://view.flodesk.com/pages/6435cc5b71c069faf7824cc3">Our Newsletter</a>
+            </li>
+              <li className="nav-item">
+              <a href="#" className="nav-link">Events</a>
+            </li>
+            <li className="nav-item">
+              <a href="/activity" className="nav-link">Book a Class</a>
             </li>
             <li className="nav-item">
               <a href="/contact" className="nav-link">Contact Us</a>

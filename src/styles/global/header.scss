@@ -6,6 +6,11 @@
   .navbar-brand {
     display: flex;
     align-items: center;
+    @include breakpoint(lg, min-width) {
+      img {
+        height: 4em;
+      }
+    }
   }
 }
 .btn-menu {
