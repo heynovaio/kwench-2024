@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Slideshow from "../components/Slideshow"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFileArrowDown } from '@fortawesome/free-solid-svg-icons'
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 
 
 const Index = () => (
@@ -68,17 +68,17 @@ const Index = () => (
 
             <ul className="event-categories">
               <li className="cat-fitness">
-                <a href="https://www.clubkwench.com/events?page=1&categoryId=1194330140">
+                <a href="/activity">
                   <h3>Fitness & Health</h3>
                 </a>
               </li>
               <li className="cat-learn">
-                <a href="https://www.clubkwench.com/events?page=1&categoryId=1194383194">
+                <a href="https://www.eventbrite.com/cc/workshops-meetups-3398169">
                   <h3>Workshops & Meetups</h3>
                 </a>
               </li>
               <li className="cat-events">
-                <a href="https://www.clubkwench.com/events?page=1&categoryId=1195441248&pastEvents=false">
+                <a href="https://www.eventbrite.com/cc/events-3399219">
                   <h3>Events</h3>
                 </a>
               </li>
@@ -205,14 +205,14 @@ const Index = () => (
           </div>
           <div style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto'}}>
             <h2>Memberships</h2>
-            <p>Choose a type of membership to download a PDF with all the info!</p>
+            <p>Choose a type of membership to view a sheet with all the info!</p>
             <div className="membership-options">
-              <a href="/" className="btn btn-membership">Hot Desk <FontAwesomeIcon icon={faFileArrowDown} /></a>
-              <a href="/" className="btn btn-membership">Boardrooms <FontAwesomeIcon icon={faFileArrowDown} /> </a>
-              <a href="/" className="btn btn-membership">Dedicated Desk <FontAwesomeIcon icon={faFileArrowDown} /></a>
-              <a href="/" className="btn btn-membership">Corporate <FontAwesomeIcon icon={faFileArrowDown} /></a>
-              <a href="/" className="btn btn-membership">Virtual Mailbox <FontAwesomeIcon icon={faFileArrowDown} /></a>
-              <a href="/" className="btn btn-membership">Add-Ons <FontAwesomeIcon icon={faFileArrowDown} /></a>
+              <a href="https://www.canva.com/design/DAGGwsiF5M0/akimLGuPDRhRDJgeA7o1ng/view?utm_content=DAGGwsiF5M0&utm_campaign=designshare&utm_medium=link&utm_source=editor" className="btn btn-membership">Hot Desk <FontAwesomeIcon icon={faArrowUpRightFromSquare} /></a>
+              <a href="https://www.canva.com/design/DAGGwelzJgY/bMa6J19AmcbUbYTK7GDXqA/view?utm_content=DAGGwelzJgY&utm_campaign=designshare&utm_medium=link&utm_source=editor" className="btn btn-membership">Boardrooms <FontAwesomeIcon icon={faArrowUpRightFromSquare} /> </a>
+              <a href="https://www.canva.com/design/DAGGwQM6YeY/nqHDD1QfWasXXzAhQ713GA/view?utm_content=DAGGwQM6YeY&utm_campaign=designshare&utm_medium=link&utm_source=editor/" className="btn btn-membership">Dedicated Desk <FontAwesomeIcon icon={faArrowUpRightFromSquare} /></a>
+              <a href="https://www.canva.com/design/DAGGwW-nZEc/rwFPPmmr_6H1EW3izzuHfQ/view?utm_content=DAGGwW-nZEc&utm_campaign=designshare&utm_medium=link&utm_source=editor" className="btn btn-membership">Corporate <FontAwesomeIcon icon={faArrowUpRightFromSquare} /></a>
+              <a href="https://www.canva.com/design/DAGGwUTq_jU/BLrXmAzT2lz-pLRxmzyKWg/view?utm_content=DAGGwUTq_jU&utm_campaign=designshare&utm_medium=link&utm_source=editor" className="btn btn-membership">Virtual Mailbox <FontAwesomeIcon icon={faArrowUpRightFromSquare} /></a>
+              <a href="https://www.canva.com/design/DAGGwUH5r5w/61P997-LVIHmV2tApyqMDw/view?utm_content=DAGGwUH5r5w&utm_campaign=designshare&utm_medium=link&utm_source=editor" className="btn btn-membership">Add-Ons <FontAwesomeIcon icon={faArrowUpRightFromSquare} /></a>
             </div>
           </div>
         <img className='H' role="presentation" src='/images/Kwench_web_letters-01.png'/>
@@ -228,11 +228,7 @@ const Index = () => (
               <p className='quote'>
                   Be it for a multi-day conference, film screening, book launch, board meeting, workshop, office party or off site strategy session, KWENCH is ready to welcome you to the most unique event and meeting spaces in the city.
               </p>
-              <a className="pdf-link" href="https://kwench.spaces.nexudus.com//files/2024 KWENCH Event Deck (1)_compressed (1).pdf" target="_blank">Download Our Events & Meeting Room Brochure</a>
-              <p>
-                  <a target="_blank" className="btn-event book-a-tour" href="https://clubkwench.tripleseat.com/party_request/20852">/ Book an event - over 16 pp</a>
-                  <a target="_blank" className='book-a-tour btn-boardroom' href="https://38twp7ziy86.typeform.com/to/klYYPBcw">/ Book a boardroom - 16 pp and under</a>
-              </p>
+              <a className="pdf-link" href="https://www.canva.com/design/DAGGwelzJgY/bMa6J19AmcbUbYTK7GDXqA/view?utm_content=DAGGwelzJgY&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank">Download Our Events & Meeting Room Brochure</a>
             </div>
           </div>
           
@@ -241,8 +237,7 @@ const Index = () => (
         <section id="seen-in" className="seen-in">
           <div className="">
             <img
-            src="https://kwench.spaces.nexudus.com/images/as-seen-logos2.jpg"
-            srcSet="https://kwench.spaces.nexudus.com/images/as-seen-logos2@2x.jpg 2x"
+            src="/images/as-seen-logos2@2x.jpg"
             alt="logos of Douglas,Frame, Nuvo, The Spaces, Wallpaper, We Heart, Western Living Magazine" />
 
           </div>
