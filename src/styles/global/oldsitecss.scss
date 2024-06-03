@@ -494,7 +494,7 @@
     display: none;
   }
 }
-.home .space .red-background{display:flex;align-items:center;background-color:#f15f58;padding:30px 75px 30px 30px;position:relative;z-index:1;height:auto;}
+.home .space .red-background{display:flex;align-items:center;background-color:#f15f58;padding:0px 75px 0px 30px;position:relative;z-index:1;height:100%;}
 @media screen and (max-width:700px){.home .space .red-background{margin-right:0;padding:40px 40px 40px 0;}}
 .home .space .content{width:100%;position:relative;}
 @media screen and (max-width:700px){.home .space .content{width:auto;position:static;transform:none}}

@@ -50,7 +50,6 @@ const Index = () => (
                     installations, meditation, food and drink - all in one
                     place.
                   </p>
-                  <a className="book-a-tour" href="/tour">/  Book a Tour</a>
                 </div>
               </div>
             </div>
@@ -98,7 +97,6 @@ const Index = () => (
                       renovated club is over 25,000 sqf of creative coworking and event
                       space for KWENCH members and the public.
                     </p>
-                    <a className='book-a-tour' href="{% Url Tour, Index %}">/ Book a Tour</a>
                     </div>
                   </div>
                 </div>
@@ -201,7 +199,6 @@ const Index = () => (
               <li>Security</li>
               <li><em>& an awesome community</em></li>
             </ul>
-            <a className='book-a-tour' href="/tour">/  Book a Tour</a>
           </div>
           <div style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto'}}>
             <h2>Memberships</h2>
