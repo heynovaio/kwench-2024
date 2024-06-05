@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import { Script } from "gatsby"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
+import { Link } from "gatsby"
+
 
 const Header = () => {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -35,25 +37,25 @@ const Header = () => {
     <header className={'site-header site-header--lo'}  >
       <div className="site-header__content">
         <nav className="navbar">
-          <a href="/" className="navbar-brand">
+          <Link to="/" className="navbar-brand">
             <img
               src='/images/getlogo.png'
               alt="Kwench"
               height="48"
             />
-          </a>
+          </Link>
           <ul className={`navbar-nav ${isOpen? 'menu-open' : ''}`}>
             <li className="nav-item">
-              <a className="nav-link" href="/bookevents">Explore Partnerships</a>
+              <Link className="nav-link" to="/bookevents/">Explore Partnerships</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" target="_blank" href="https://view.flodesk.com/pages/6435cc5b71c069faf7824cc3">Our Newsletter</a>
+              <Link className="nav-link" target="_blank" to="https://view.flodesk.com/pages/6435cc5b71c069faf7824cc3">Our Newsletter</Link>
             </li>
               <li className="nav-item">
-              <a href="https://www.eventbrite.com/cc/events-3399219" className="nav-link">Events</a>
+              <Link to="https://www.eventbrite.com/cc/events-3399219" className="nav-link">Events</Link>
             </li>
             <li className="nav-item">
-              <a href="/contact" className="nav-link">Contact Us</a>
+              <Link to="/contact" className="nav-link">Contact Us</Link>
             </li>
           </ul>
           <div className="navbar-action">

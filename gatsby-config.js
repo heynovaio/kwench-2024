@@ -12,7 +12,7 @@ module.exports = {
     title: `Kwench Events`,
     description: ``,
     author: `HeyNova`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    siteUrl: `https://www.clubkwench.com`,
   },
   plugins: [
     `gatsby-plugin-sass`,
@@ -29,8 +29,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Kwench Events`,
-        short_name: `kwench-events`,
+        name: `Club Kwench`,
+        short_name: `kwench-2024`,
         start_url: `/`,
         background_color: `#ecdbe1`,
         display: `minimal-ui`,
