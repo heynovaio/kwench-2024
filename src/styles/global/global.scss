@@ -117,6 +117,14 @@ ul {
   &:hover {
     transform: scale(105%);
   }
+
+  &.sm-link {
+    font-size: 1rem;
+    margin: 0;
+    text-align: left;
+    font-weight: 400;
+    margin-bottom: 4px;
+  }
 }
 
 strong {

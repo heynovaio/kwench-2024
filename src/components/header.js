@@ -49,10 +49,10 @@ const Header = () => {
               <Link className="nav-link" to="/bookevents/">Explore Partnerships</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" target="_blank" to="https://view.flodesk.com/pages/6435cc5b71c069faf7824cc3">Our Newsletter</Link>
+              <a className="nav-link" target="_blank" href="https://view.flodesk.com/pages/6435cc5b71c069faf7824cc3">Our Newsletter</a>
             </li>
               <li className="nav-item">
-              <Link to="https://www.eventbrite.com/cc/events-3399219" className="nav-link">Events</Link>
+              <a href="https://www.eventbrite.ca/o/kwench-27928745221" target="_blank" className="nav-link">Events</a>
             </li>
             <li className="nav-item">
               <Link to="/contact" className="nav-link">Contact Us</Link>

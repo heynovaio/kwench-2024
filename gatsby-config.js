@@ -37,6 +37,14 @@ module.exports = {
         icon: `src/images/getlogo.png`,
       },
     },
+    {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+        bucketName: "s3-website-us-east-1",
+        protocol: "https",
+        hostname: "www.clubkwench.com",
+      },
+    },
     `gatsby-omni-font-loader`,
     {
       resolve: `gatsby-omni-font-loader`,

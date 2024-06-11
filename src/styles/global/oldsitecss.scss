@@ -591,7 +591,7 @@
   display: flex;
   align-items: center;
   margin: 0 auto;
-  width: 60%;
+  width: 80%;
   @include breakpoint(md, max-width) {
    display: block;
    width: 100%;
@@ -777,6 +777,7 @@
   color: #f15f58;
   display: block;
   margin-top: 15px;
+  font-size: 1rem;
 }
 
 .home .seen-in {

@@ -225,7 +225,10 @@ const Index = () => (
               <p className='quote'>
                   Be it for a multi-day conference, film screening, book launch, board meeting, workshop, office party or off site strategy session, KWENCH is ready to welcome you to the most unique event and meeting spaces in the city.
               </p>
-              <a className="pdf-link" href="https://www.canva.com/design/DAGGwelzJgY/bMa6J19AmcbUbYTK7GDXqA/view?utm_content=DAGGwelzJgY&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank">Download Our Events & Meeting Room Brochure</a>
+              <a className="pdf-link" href="/file/KWENCH-Event-Deck-2024.pdf" target="_blank">Download Our Events & Meeting Room Brochure</a>
+              <p>
+              <a className="cta-link sm-link" href="https://kwench.typeform.com/to/zTVuNJvC" target="_blank">Book a boardroom (1-15 attendees)</a>
+              <a className="cta-link sm-link" href="https://kwench.typeform.com/to/Kwmg6x5v" target="_blank">Book a private event (16+ attendees)</a></p>
             </div>
           </div>
           
