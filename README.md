@@ -88,7 +88,7 @@ The bucket name you'll be syncing to is : s3://events.clubkwench.com
 
 ```shell
   npm run build
-  aws s3 sync public/ s3://events.clubkwench.com
+  aws s3 sync public/ s3://clubkwench.com
 ```
 **Staging/test site**: http://events.clubkwench.com.s3-website.ca-central-1.amazonaws.com/eventsform/
 
