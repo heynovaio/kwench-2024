@@ -1,9 +1,4 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
 <h1 align="center">
   Kwench - Based on the Gatsby Starter Theme
 </h1>
@@ -19,7 +14,7 @@ _Have another more specific idea? You may want to check out our vibrant collecti
     Navigate into your new site’s directory and start it up.
 
     ```shell
-    cd kwench-events/
+    cd kwench-2024
     gatsby develop or npm start
     ```
 
@@ -67,13 +62,6 @@ A quick look at the top-level files and directories you'll see in a typical Gats
 
 1.  **`README.md`**: A text file containing useful reference information about your project.
 
-## 🎓 Learning Gatsby
-
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.com/). Here are some places to start:
-
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.com/docs/tutorial/getting-started/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
-
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
 
 ## 💫 Deploy
 
@@ -88,11 +76,13 @@ The bucket name you'll be syncing to is : s3://events.clubkwench.com
 
 ```shell
   npm run build
-  aws s3 sync public/ s3://clubkwench.com
+  aws s3 sync public/ s3://clubkwench.com --acl public-read
 ```
-**Staging/test site**: http://events.clubkwench.com.s3-website.ca-central-1.amazonaws.com/eventsform/
+The public-read tag is important otherwise the website will crash. 
 
-Bucket has a 24 hour cache so you won't see your changes live right away, use staging site in the meantime. 
+**Staging/test site**: currently unavailable due to access
+
+Bucket has a 24 hour cache so you won't see your changes live right away. 
 
 
 
