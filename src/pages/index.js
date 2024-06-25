@@ -263,7 +263,7 @@ const Index = () => (
                 <a href="https://www.facebook.com/clubkwench/" className="facebook-icon" title="facebook" target="_blank"><i className="icon-social-facebook fs-24" wiid="C328"></i></a>
 
                 <div className="footer-sign-up">
-                  <p>Want to keep up to date with what's happening at the club? <a className="sign-up" target="_blank" href="https://view.flodesk.com/pages/6435cc5b71c069faf7824cc3">Click HERE</a> to sign-up for our newsletter!</p>
+                  <p>Want to keep up to date with what's happening at the club? <a className="sign-up" target="_blank" href="https://view.flodesk.com/pages/6435cc5b71c069faf7824cc3">Click to sign-up for our newsletter!</a></p>
                 </div>
                 
 
