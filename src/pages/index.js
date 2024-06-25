@@ -228,7 +228,7 @@ const Index = () => (
               <a className="pdf-link" href="/file/KWENCH-Event-Deck-2024.pdf" target="_blank">Download Our Events & Meeting Room Brochure</a>
               <p>
               <a className="cta-link sm-link" href="https://kwench.typeform.com/to/zTVuNJvC" target="_blank">Book a boardroom (1-15 attendees)</a>
-              <a className="cta-link sm-link" href="https://kwench.typeform.com/to/Kwmg6x5v" target="_blank">Book a private event (16+ attendees)</a></p>
+              <a className="cta-link sm-link" href="https://clubkwench.tripleseat.com/party_request/20852" target="_blank">Book a private event (16+ attendees)</a></p>
             </div>
           </div>
           

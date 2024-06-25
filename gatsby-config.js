@@ -9,14 +9,22 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Kwench Events`,
-    description: ``,
+    title: `Kwench`,
+    description: `We are a full-service coworking & culture club in Victoria for creative, ambitious thinkers & doers who seek more.”`,
     author: `HeyNova`,
     siteUrl: `https://www.clubkwench.com`,
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-image`,
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        sitemap: 'https://www.clubkwench.com/sitemap-index.xml',
+        policy: [{userAgent: '*', allow: '/'}]
+      }
+    },
     {
     resolve: `gatsby-source-filesystem`,
       options: {
