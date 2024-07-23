@@ -9,7 +9,7 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Kwench`,
+    title: `KWENCH`,
     description: `We are a full-service coworking & culture club in Victoria for creative, ambitious thinkers & doers who seek more.”`,
     author: `HeyNova`,
     siteUrl: `https://www.clubkwench.com`,
@@ -37,7 +37,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Club Kwench`,
+        name: `Club KWENCH`,
         short_name: `kwench-2024`,
         start_url: `/`,
         background_color: `#ecdbe1`,

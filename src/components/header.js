@@ -40,7 +40,7 @@ const Header = () => {
           <Link to="/" className="navbar-brand">
             <img
               src='/images/getlogo.png'
-              alt="Kwench"
+              alt="KWENCH"
               height="48"
             />
           </Link>
